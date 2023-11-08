@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  }
+
+h1 {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 3em;
+  color: #ff9900;
+  text-shadow: 2px 2px 4px #333;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2 {
+    
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #ff9900;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+    position: relative;
+    animation: pulse 1.5s infinite;
+    transition: color 0.3s ease;
+    
+}
+
+h2:hover {
+    color: #cc6600;
+    animation: none; /* Stoppt die Animation beim Überfahren */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+}
+
+
+h3 {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+    color: #ff9900;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Stil für Links innerhalb des Textes */
+h3 a {
+    color: #ff9900;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+h3 a:hover {
+    color: #cc6600;
+}
+
+
+.bmc-btn {
+  margin-bottom: 2rem;
+}
+
+.goodbye-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.goodbye-message h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.goodbye-message p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+}
